@@ -1,4 +1,11 @@
 <?php include ('inc/header.php'); ?>
+<?php
+session_start();
+if (isset($_SESSION['user'])) {
+    header("location:profile.php");
+    die;
+};
+?>
  <div class="container vh-100 my-5 py-5">
     <div class="row">
         <div class="col-8 mx-auto">

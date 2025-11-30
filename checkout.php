@@ -5,6 +5,12 @@ session_start();
 $cart = $_SESSION['cart'] ?? [];
 $user = $_SESSION['user'] ?? [];
 ?>
+<?php
+if (!isset($_SESSION['user'])){
+    header("location:login.php");
+    die;
+};
+?>
 
 <!-- Header-->
 <header class="bg-dark py-5">
@@ -66,7 +72,7 @@ $user = $_SESSION['user'] ?? [];
                             <input type="text" name="notes" id="notes" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <input type="submit" value="Send" class="btn btn-success" >
+                            <input type="submit" value="Send" class="btn btn-success">
                         </div>
                     </div>
                 </form>

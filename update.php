@@ -10,6 +10,12 @@ foreach ($products as $p) {
     }
 }
 ?>
+<?php
+if (!isset($_SESSION['user'])){
+    header("location:login.php");
+    die;
+};
+?>
 
 <div class="container vh-100 my-5">
     <div class="row">

@@ -20,6 +20,9 @@ function validateEmail($email)
 {
     return filter_var($email, FILTER_VALIDATE_EMAIL) ? null : "Invalid Email";
 }
+
+// ________________________________________________________________________
+
 // ________________________________________________________________________
 function validatePassword($password)
 {
@@ -82,11 +85,13 @@ function validateFileImage($image){
 }
 
 // ________________________________________________________________________
-function validateRegister($name, $email,$password, $confirm_password)
+function validateRegister($name, $email,$phone,$role,$password, $confirm_password)
 {
     $filds = [
         "name" => $name, 
         "email" => $email, 
+        "phone" => $phone,
+        "role" => $role,
         "password" => $password,
         "confirm_password" => $confirm_password,
     ];

@@ -18,25 +18,29 @@ function showMessage()
         unset($_SESSION['message']);
     }
 }
-function registerUser($name, $email,$password)
+function registerUser($name, $email,$phone,$role,$password)
  {
     $usersJsonFile = __DIR__ . "/../data/users.json";
 
     $users = file_exists($usersJsonFile) ? json_decode(file_get_contents($usersJsonFile),true) : [];
-     $newId = empty($products) ? 1 : max(array_column($products, 'id')) + 1;
+     $newId = empty($users) ? 1 : max(array_column($users, 'id')) + 1;
       
     $hashPassword = password_hash($password,PASSWORD_DEFAULT);
     $newUser = [
         "id" => $newId,
         "name" => $name,
         "email" => $email,
+        "phone" => $phone,
+        "role" => $role,
         "password" => $hashPassword,
     ];
 
     $users[] = $newUser;
     $_SESSION['user'] = [
         'name' => $name,
-        'email' => $email
+        'email' => $email,
+        'phone' => $phone,
+        'role' => $role,
     ];
     file_put_contents($usersJsonFile,json_encode($users,JSON_PRETTY_PRINT));
     return true;

@@ -32,10 +32,12 @@ $cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                  <?php if (isset($_SESSION['user'])) : ?>
+                    <?php if (isset($_SESSION['user'])) : ?>
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+
                     <li class="nav-item"><a class="nav-link" href="addproducts.php">Add Product</a></li>
                     <?php endif; ?>
                 </ul>

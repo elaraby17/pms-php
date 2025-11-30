@@ -1,4 +1,12 @@
-<?php require_once ('inc/header.php'); ?>
+<?php require_once ('inc/header.php'); 
+session_start();
+?>
+<?php
+if (!isset($_SESSION['user'])){
+    header("location:login.php");
+    die;
+};
+?>
 
 <!-- Header-->
 <header class="bg-dark py-5">
@@ -15,6 +23,7 @@
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
              <?php foreach (getAllProducts() as $product): ?>
             <div class="col mb-5">
+               <?php if (isset($_SESSION['user']) ): ?>
                 <div class="update d-flex justify-content-start gap-2 ">
                     <form action="handlers/Products/delete.php" method="post">
                         <input type="hidden" name="id" value="<?=$product['id']?>">
@@ -30,6 +39,7 @@
                         </a>
                     </div>
                 </div>
+                <?php endif; ?>
                 <div class="card h-100">
                     <!-- Product image-->
                     <img class="card-img-top" src="assets/images/<?=$product['image']?>" alt="..." />

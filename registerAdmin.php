@@ -8,7 +8,7 @@ if (!isset($_SESSION['user'])){
 <div class="container vh-100 my-5">
     <div class="row">
         <div class="col-8 mx-auto my-5">
-            <h2 class="text-center p-2 my-2 border">Register</h2>
+            <h2 class="text-center p-2 my-2 border">Register Admin</h2>
     
             <form action="handlers/auth/register.php" method="POST" class="border p-3">
                   <div class="form-group p-2 my-1">
@@ -21,12 +21,14 @@ if (!isset($_SESSION['user'])){
                   </div>
                   <div class="form-group p-2 my-1">
                         <label for="phone">Phone</label>
+
                         <input type="text" class="form-control" id="phone" name="phone">
                   </div>
                   <div class="form-group p-2 my-1">
                         <label for="role">Role</label>
                         <select class="form-control" id="role" name="role">
                             <option value="user" selected>User</option>
+                            <option value="admin" selected>Admin</option>
                         </select>
                   <div class="form-group p-2 my-1">
                         <label for="password">Password</label>

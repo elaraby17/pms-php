@@ -43,7 +43,7 @@ $cart = $_SESSION['cart'] ?? [];
                             </td>
                             <td><?php  $total = $product['price'] * $product['qty']; echo $total;?></td>
                             <td>
-                                <a href="./deletecarat.php?id=<?php echo $product['id']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="handlers/cart/deletecarat.php?id=<?php echo $product['id']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                       <?php endforeach; ?>

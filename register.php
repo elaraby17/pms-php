@@ -4,7 +4,7 @@
         <div class="col-8 mx-auto my-5">
             <h2 class="text-center p-2 my-2 border">Register</h2>
     
-            <form action="./handlers/auth/register.php" method="POST" class="border p-3">
+            <form action="handlers/auth/register.php" method="POST" class="border p-3">
                   <div class="form-group p-2 my-1">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name">

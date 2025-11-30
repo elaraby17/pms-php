@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../../update.php");
         exit();
     }
-    if(updateProduct($id,$title, $price,$description,$image)){
+    if(updateProduct($id ,$title, $price,$description,$image)){
         setMessage("product added successfully", "success");
         header("Location: ../../index.php");
         exit();

@@ -3,11 +3,13 @@
 include ('../../core/validations.php');
 include ('../../core/functions.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $title = $_POST['title'];
-    $price = $_POST['price'];
-    $description = $_POST['description'];
+    // foreach($_POST as $key => $value) {
+    //     $$key = cleanInput($value);
+    // }
+    $title = cleanInput($_POST['title']);
+    $price = cleanInput($_POST['price']);
+    $description = cleanInput($_POST['description']);
     $image = $_FILES['image'];
-
 
     $error = validateProduct($title, $price,$description,$image);
     if(!empty($error)){

@@ -13,13 +13,6 @@
                     <input type="password" class="form-control" id="password" name="password">
                 </div>
                 <div class="form-group p-2 my-1">
-                    <label for="role">Role</label>
-                    <select class="form-control" id="role" name="role">
-                        <option value="admin">Admin</option>
-                        <option value="user">User</option>
-                    </select>
-                </div>
-                <div class="form-group p-2 my-1">
                     <input type="submit" class="btn btn-primary" value="Login">
                 </div>
             </form>

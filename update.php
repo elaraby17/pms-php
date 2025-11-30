@@ -1,7 +1,6 @@
 <?php include ('inc/header.php'); ?>
-
 <?php
-$products = getProducts();
+$products = getAllProducts();
 $id = $_GET['id'];
 
 foreach ($products as $p) {
@@ -10,7 +9,6 @@ foreach ($products as $p) {
         break;
     }
 }
-
 ?>
 
 <div class="container vh-100 my-5">
@@ -20,6 +18,7 @@ foreach ($products as $p) {
     
             <form action="./handlers/products/update.php" method="POST" class="border p-3" enctype="multipart/form-data">
                   <div class="form-group p-2 my-1">
+                        <input type="hidden" name="id" value="<?= $product['id']; ?>">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" id="title" name="title" value="<?= $product['title']; ?>">
                   </div>

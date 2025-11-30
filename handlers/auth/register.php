@@ -1,22 +1,18 @@
 <?php
-
 include ('../../core/validations.php');
 include ('../../core/functions.php');
-if ($_SERVER["REQUEST_METHOD"] =="POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $role = $_POST['role'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
-   
-    $error = validateRegister($name, $email,  $role, $password, $confirm_password);
-    if(!empty($error)){
-        setMessage($error, "danger");
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  foreach($_POST as $key => $value) {
+        $$key = cleanInput($value);
+    }
+    $error = validateRegister($name, $email, $password, $confirm_password);
+    if (!empty($error)) {
+        setMessage( $error , 'danger');
         header("Location: ../../register.php");
         exit();
     }
-    if(registerUser($name, $email,$role, $password)){
-        
+
+    if(registerUser($name, $email, $password)){
         setMessage("User registered successfully", "success");
         header("Location: ../../index.php");
         exit();
@@ -25,4 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] =="POST") {
         header("Location: ../../register.php");
         exit();
     }
+
+
+
+
+
 }

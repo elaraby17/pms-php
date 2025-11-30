@@ -1,5 +1,11 @@
 <?php
-
+function cleanInput($data) 
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 function validateRequired($inputName, $value)
 {
     return empty($value) ? "$inputName is required" : null;
@@ -76,12 +82,11 @@ function validateFileImage($image){
 }
 
 // ________________________________________________________________________
-function validateRegister($name, $email, $role,$password, $confirm_password)
+function validateRegister($name, $email,$password, $confirm_password)
 {
     $filds = [
         "name" => $name, 
         "email" => $email, 
-        "role" => $role,
         "password" => $password,
         "confirm_password" => $confirm_password,
     ];

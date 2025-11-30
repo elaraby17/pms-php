@@ -827,6 +827,11 @@ progress {
 .offset-10 {
   margin-left: 83.33333333%;
 }
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
 
 .offset-11 {
   margin-left: 91.66666667%;

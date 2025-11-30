@@ -3,9 +3,9 @@
 include ('../../core/validations.php');
 include ('../../core/functions.php');
 if ($_SERVER["REQUEST_METHOD"] =="POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    foreach($_POST as $key => $value) {
+        $$key = cleanInput($value);
+    }
 
     $error = validateContact( $name,$email, $message);
     if(!empty($error)){
@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] =="POST") {
         header("Location: ../../contact.php");
         exit();
     }
-    if(sendMessage($name, $email, $message)){
+    if(contactMessage($name, $email, $message)){
         setMessage("Message sent successfully", "success");
         header("Location: ../../index.php");
         exit();

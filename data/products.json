@@ -1,23 +1,16 @@
 [
     {
-        "id": 1,
-        "title": "Nisi consequat Cons",
-        "price": "66",
-        "description": "Eius mollitia ipsa ",
-        "image": "2025-11-28_1655.jpeg"
-    },
-    {
         "id": 2,
-        "title": "Molestiae natus ex d",
-        "price": "943",
-        "description": "Vero velit quis labo",
-        "image": "2025-11-29_7670.jpeg"
+        "title": "Voluptate voluptate",
+        "price": "488",
+        "description": "Nam quia reiciendis",
+        "image": "2025-11-30_2529.jpeg"
     },
     {
         "id": 3,
-        "title": "Non numquam laborum ",
-        "price": "312",
-        "description": "Cum voluptates et no",
-        "image": "2025-11-29_2632.jpeg"
+        "title": "Illum amet sint ra",
+        "price": "670",
+        "description": "Elit natus mollitia",
+        "image": "2025-11-30_4361.jpeg"
     }
 ]

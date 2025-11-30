@@ -1,64 +1,8 @@
 [
     {
-        "name": "Mohamed Elaraby",
-        "email": "mohamedelaraby@araby.com",
-        "role": "admin",
-        "password": "$2y$10$46Y3UKHxu6DdVILxjYbTAe3C8vAnej3C2FTS843aRIhSeQ.Adm.D6"
-    },
-    {
-        "name": "Allen Sellers",
-        "email": "zihirutab@mailinator.com",
-        "password": "$2y$10$7hLcIPi8TWOcJfVuJAJ2YeFl0u0aDC0zhQlAWGJWdxbByhV\/13iQ2"
-    },
-    {
-        "name": "Mohamed El araby",
-        "email": "moahmed@gmail.com",
-        "password": "$2y$10$h4tU00kqHqniAPGrvpOXgOFX6SRIdINaguoXlzOSAdcljurG2aBwu"
-    },
-    {
-        "name": "Alexander Morgan",
-        "email": "wyguvegy@mailinator.com",
-        "password": "$2y$10$BGD6EV7ONKMIUczvQzEbzOHPnSFBO.yFBLCer.84jO3vDd6XX857m"
-    },
-    {
-        "name": "Lacota Kelly",
-        "email": "nopyv@mailinator.com",
-        "password": "$2y$10$CIuoRYwBkf3risooh\/JOgergxmW7cedMSsXrLhV4Q6olxF0zUG4YS"
-    },
-    {
-        "name": "Thane Schneider",
-        "email": "vybyturyby@mailinator.com",
-        "password": "$2y$10$vbF64NOMgyfB8ReDcUQZnu53oi7iMPdWhqB3mChEGFDZxeydsfjtm"
-    },
-    {
-        "name": "arab",
-        "email": "a@a.com",
-        "password": "$2y$10$mraxvb97Y1K6xCQHxHD6Uuwg\/SLoB00Wx7Z9pfnGDIDFRcXd.6TQ."
-    },
-    {
-        "name": "mohamed",
-        "email": "m@m.com",
-        "password": "$2y$10$F1Lx\/ZfJpo8v2Uo7J7VBleJ\/wJOVFbSwpl4mqMhezFjelfBxdYeg2"
-    },
-    {
-        "name": "mmo",
-        "email": "k@k.com",
-        "password": "$2y$10$\/vyvH8VmTuzMzXSVSkuHk.O3sT\/SDtj3QGTaEn7ZsRYpdC7HuYAvi"
-    },
-    {
-        "name": "Breanna Fry",
-        "email": "wivedeqaz@mailinator.com",
-        "password": "$2y$10$Y6p.5kSPcmW9Z4SUyS25y.mqA3QgHdi8nGQuKVyeSPTqHL6qh27Ei"
-    },
-    {
-        "name": "mooo",
-        "email": "me@me.com",
-        "password": "$2y$10$xSzx7\/dBuzfecMaVCE9AxO2Wur\/82q2aCcu6a1N.3TQK1S1DhMWg."
-    },
-    {
-        "name": "Elaraby",
-        "email": "elaraby@elaraby.com",
-        "role": "admin",
-        "password": "$2y$10$OMt.D4umxr23n10oQisj2uo681BHymPHbSWpoT6qEQquQpbjrvdeS"
+        "id": 1,
+        "name": "El Araby",
+        "email": "araby@araby.com",
+        "password": "$2y$10$gq7GYWm8T6wMtr7QyDsabO1Y7IHQH.4tW0LU4HgDNSVdwOFRXby\/6"
     }
 ]

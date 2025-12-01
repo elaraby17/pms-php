@@ -1,10 +1,5 @@
 <?php include ('inc/header.php'); ?>
-<?php
-if (!isset($_SESSION['user'])){
-    header("location:login.php");
-    die;
-};
-?>
+<?php session_start(); ?>
 <div class="container vh-100 my-5">
     <div class="row">
         <div class="col-8 mx-auto my-5">

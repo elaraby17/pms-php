@@ -6,5 +6,13 @@
         "phone": "01069880640",
         "role": "admin",
         "password": "$2y$10$8pNA\/uio76M5UjZkurY4rO.9Jy\/X\/yvCRPFYPItJ9\/Nhn2Lgc41BS"
+    },
+    {
+        "id": 2,
+        "name": "Yara",
+        "email": "yara@yara.com",
+        "phone": "01069880640",
+        "role": "user",
+        "password": "$2y$10$eOo7ukZpO2ekvlxs1zxDuOtAsFzy7hN2rgCN63GiEtr5r1MfX8THC"
     }
 ]

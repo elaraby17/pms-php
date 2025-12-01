@@ -1,16 +1,23 @@
 [
     {
+        "id": 1,
+        "title": "Quam voluptatibus fu",
+        "price": "418",
+        "description": "Sapiente voluptatem",
+        "image": "2025-12-01_6580.jpeg"
+    },
+    {
         "id": 2,
-        "title": "Voluptate voluptate",
-        "price": "488",
-        "description": "Nam quia reiciendis",
-        "image": "2025-11-30_2529.jpeg"
+        "title": "Doloremque ut numqua",
+        "price": "850",
+        "description": "Et suscipit amet as",
+        "image": "2025-12-01_4847.jpeg"
     },
     {
         "id": 3,
-        "title": "Illum amet sint ra",
-        "price": "670",
-        "description": "Elit natus mollitia",
-        "image": "2025-11-30_4361.jpeg"
+        "title": "Mollitia qui eveniet",
+        "price": "754",
+        "description": "Nemo alias omnis et",
+        "image": "2025-12-01_8894.jpeg"
     }
 ]
